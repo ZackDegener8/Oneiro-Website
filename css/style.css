@@ -1,0 +1,27 @@
+ section.hero {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    background: url("../images/gummibear.jpg") center center;
+    background-size: cover;
+}
+
+section.hero::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #00ffff, #00ffff);
+    opacity: .7;
+    z-index: 0;
+}
+
+section.hero h1,
+section.hero p {
+  color: white;
+  position: relative;
+  z-index: 1
+}
