@@ -1,3 +1,4 @@
+ 
  header.hero {
     width: 100%;
     height: 100vh;
@@ -17,7 +18,6 @@ header.hero nav {
 }
 
 header.hero nav .brand {
-      background: #fffc00;
       display: flex;
       position: relative;
       flex: 70%;
@@ -28,13 +28,14 @@ header.hero nav ul{
     flex: 70%;
     list-style: none;
     display: flex;
-    background: #fffc00;
-
-   
 }
 
 header.hero nav ul li a {
-    padding: 1rem 3rem;
+    background: #ff0aa3
+}
+
+header.hero nav ul li a {
+    padding: 1rem 1.5rem;
     color: white;
     text-transform: uppercase;
     text-decoration: none;  
@@ -76,9 +77,9 @@ header.hero p{
 
 header.hero .btn {
   background: #fffc00;
-  color: white;
-  font-size: 50px;
-  padding: 0 3rem;
+  color: #ff0aa3;
+  font-size: 25px;
+  padding: 0.5rem;
   text-decoration: none;
 }
 
@@ -109,6 +110,44 @@ header.hero::after {
     opacity: .5;
     z-index: 0;
 }
+
+@media screen. and (max-width: 480px) {
+    header.hero nav {
+      display:block;
+    }
+
+    header.hero nav .brand img {
+      max-width: 100%;
+    }
+
+    header.hero nav ul {
+      margin: 0;
+      flex: none;
+      padding: 0;
+    }
+
+    header.hero nav ul li a {
+      padding: 1rem  0.3rem;
+      font-size: 12px;
+      font-weight: bold;
+      display: flex-none;
+    }
+
+    header.hero h1 {
+      font-size: 40px;
+      line-height: 10px;
+
+    }
+
+    header.hero .btn {
+      background: #fffc00;
+      color: #ff0aa3;
+      font-size: 25px;
+      padding: 0.5rem;
+      text-decoration: none;
+      border-radius: 42px;
+
+    }
 
 footer {
     background: #fffc00;
